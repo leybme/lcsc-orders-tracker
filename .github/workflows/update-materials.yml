@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'orders/*.csv'
+      - 'update.py'
   workflow_dispatch:
 
 jobs:
