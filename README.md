@@ -1,6 +1,6 @@
 # Materials List
 
-| LCSC Part Number | Manufacture Part Number | Description | Manufacturer | Package | RoHS | Quantity | Unit Price($) | Ext.Price($) | Status |
+| LCSC Part Number | MPN | Description | Manufacturer | Package | RoHS | Quantity | Unit Price($) | Ext.Price($) | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [C2943466](https://www.lcsc.com/product-detail/C2943466.html) | ITR1204SR10A/TR | SMD-4P Reflective Optical Interrupters ROHS | Everlight Elec | SMD-4P | YES | 20 | 0.1723 | 3.45 | - |
 | [C7528083](https://www.lcsc.com/product-detail/C7528083.html) | M3*4-cu | Patch round nut  | ZHONGYI | - | NO | 10 | 0.051 | 0.51 | - |
