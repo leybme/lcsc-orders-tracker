@@ -1,0 +1,55 @@
+LCSC Part Number,Manufacture Part Number,Manufacturer,Customer NO.,Package,Description,RoHS,Quantity,Unit Price($),Ext.Price($),Estimated lead time (business days),Date Code / Lot No.,Status
+C2943466,ITR1204SR10A/TR,Everlight Elec,,SMD-4P,SMD-4P Reflective Optical Interrupters ROHS,YES,20,0.1723,3.45,,,-
+C7528083,M3*4-cu,ZHONGYI,,-,"Patch round nut ",NO,10,0.051,0.51,,,-
+C2916369,SMTSO3080CTJ,Sinhoo,,-,Patch round nut ROHS,YES,10,0.0979,0.98,,,-
+C2977151,AMS1117-5.0RG,HANSCHIP semiconductor,,SOT-223,"75dB@(120Hz) 1A Fixed 5V Positive 15V SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,10,0.0349,0.35,,,-
+C2878926,TPSM84209RKHR,Texas Instruments,,QFN-9-FOD(4x4.5)cm,Buck Adjustable 1.2V~6V 2.5A 4.5V~28V QFN-9-FOD(4x4.5)cm DC-DC Converters ROHS,YES,5,1.9882,9.94,,,-
+C70377,CR2032-BS-6-1,Q&J,,SMD,Battery Holder CR2032 SMD Button And Strip Battery Connector ROHS,YES,5,0.1739,0.87,,,-
+C14663,CC0603KRX7R9BB104,YAGEO,,0603,50V 100nF X7R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.002,0.20,,,-
+C223608,MBR120VLSFT1G,onsemi,,SOD-123FL,20V 300mV@1A 1A SOD-123FL Schottky Diodes ROHS,YES,30,0.2112,6.34,,,-
+C138010,RC0402FR-07300RL,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 300Ω 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0007,0.07,,,-
+C107410,DS3231MZ+TRL,Analog Devices Inc./Maxim Integrated,,SOIC-8,I2C SOIC-8 Real Time Clocks ROHS,YES,6,3.7014,22.21,,,-
+C17168,0402WGF0000TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±800ppm/℃ ±1% 0Ω 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0005,0.05,,,-
+C239522,A1002WR-S-4P,CJT(Changjiang Connectors),,"SMD,P=1mm,Surface Mount,Right Angle","1x4P 4P SH 1 1mm 4 Phosphor Bronze SMD,P=1mm,Surface Mount,Right Angle Wire To Board Connector ROHS",YES,10,0.1964,1.96,,,-
+C19702,CL10A106KP8NNNC,Samsung Electro-Mechanics,,0603,10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0055,0.55,,,-
+C19666,CL10A475KO8NNNC,Samsung Electro-Mechanics,,0603,16V 4.7uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0102,1.02,,,-
+C16133,TAJB107K006RNJ,Kyocera AVX,,CASE-B-3528-21(mm),100uF 6.3V 1.7Ω@100kHz ±10% CASE-B-3528-21(mm) Tantalum Capacitors ROHS,YES,10,0.1389,1.39,,,-
+C383211,LESD5D5.0CT1G,LRC,,SOD-523,9.4A@8/20us 150W@8/20us 18.6V 7.8V Bidirectional 5V SOD-523 ESD and Surge Protection (TVS/ESD) ROHS,YES,50,0.0206,1.03,,,-
+C461817,DESD3V3E1BL-7B,Diodes Incorporated,,X1-DFN1006-2,5A@8/20us 35W 7V 3.8V 3.3V X1-DFN1006-2 ESD and Surge Protection (TVS/ESD) ROHS,YES,50,0.0456,2.28,,,-
+C910843,BSMD2920-200-33V,BHFUSE,,2920,33V 2A 40A 4A 2920 Resettable Fuses ROHS,YES,20,0.1229,2.46,,,-
+C25896,0402WGF4752TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 47.5kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0006,0.06,,,-
+C269505,RMC060368.1K1%N,TyoHM,,0603,100mW Thick Film Resistor 50V ±100ppm/℃ ±1% 68.1kΩ 0603 Chip Resistor - Surface Mount ROHS,YES,100,0.003,0.30,,,-
+C43473,0402WGF2212TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 22.1kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0006,0.06,,,-
+C11702,0402WGF1001TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0006,0.06,,,-
+C27438,2.54-1*8P,BOOMELE(Boom Precision Elec),,"Through Hole,P=2.54mm","2.54mm 1 8P Through Hole 1x8P Through Hole,P=2.54mm Female Headers ROHS",YES,10,0.0765,0.77,,,-
+C239514,A1002WV-S-5P,CJT(Changjiang Connectors),,"SMD,P=1mm","1x5P 5P SH 1 1mm 5 Phosphor Bronze SMD,P=1mm Wire To Board Connector ROHS",YES,10,0.2822,2.82,,,-
+C96493,HNB09A05,Jiangsu Huaneng Elec,,"Through Hole,D=9mm","85dB Active Buzzer (Built-in Driving Circuit) Electromagnetic 3kHz Through Hole,D=9mm Buzzers ROHS",YES,10,0.2306,2.31,,,-
+C15849,CL10A105KB8NNNC,Samsung Electro-Mechanics,,0603,50V 1uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,50,0.0037,0.19,,,-
+C15195,CL05B103KB5NNNC,Samsung Electro-Mechanics,,0402,50V 10nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0013,0.13,,,-
+C32949,CL05C100JB5NNNC,Samsung Electro-Mechanics,,0402,50V 10pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0045,0.45,,,-
+C1523,0402B102K500NT,FH (Guangdong Fenghua Advanced Tech),,0402,50V 1nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0011,0.11,,,-
+C96123,CL31A476MPHNNNE,Samsung Electro-Mechanics,,1206,10V 47uF X5R ±20% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,30,0.0721,2.16,,,-
+C15850,CL21A106KAYNNNE,Samsung Electro-Mechanics,,0805,25V 10uF X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,50,0.0092,0.46,,,-
+C239517,A1002WV-S-8P,CJT(Changjiang Connectors),,"SMD,P=1mm","1x8P 8P SH 1 1mm 8 Phosphor Bronze SMD,P=1mm Wire To Board Connector ROHS",YES,15,0.3569,5.35,,,-
+C8678,SS34,MDD(Microdiode Semiconductor),,SMA(DO-214AC),40V Independent 3A 550mV@3A SMA(DO-214AC) Schottky Diodes ROHS,YES,20,0.0244,0.49,,,-
+C2687116,USBLC6-2SC6,"UMW(Youtai Semiconductor Co., Ltd.)",,SOT-23-6,15V 6V SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS,YES,20,0.037,0.74,,,-
+C910820,BSMD0603-035-16V,BHFUSE,,0603,16V 350mA 40A 750mA 0603 Resettable Fuses ROHS,YES,10,0.0661,0.66,,,-
+C2849537,PNLS6045-100M 10UH,DMBJ,,"SMD,6x6mm","4.5A 10uH Magnetic Shielded Inductor ±20% SMD,6x6mm Power Inductors ROHS",YES,10,0.0657,0.66,,,-
+C62892,UMH3N,"Jiangsu Changjing Electronics Technology Co., Ltd.",,SOT-363,"100@1mA,5V 150mW 100mA 50V SOT-363 Digital Transistors ROHS",YES,10,0.0477,0.48,,,-
+C705024,AF0402FR-071K96L,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 1.96kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0036,0.36,,,-
+C327339,RC0402FR-0751K1L,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 51.1kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0004,0.04,,,-
+C481923,CRCW040210K2FKED,Vishay Intertech,,0402,63mW Thick Film Resistor 50V ±1% ±100ppm/℃ 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,50,0.0107,0.54,,,-
+C25905,0402WGF5101TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 5.1kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0005,0.05,,,-
+C26083,0402WGF1004TCE,UNI-ROYAL(Uniroyal Elec),,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 1MΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0006,0.06,,,-
+C23139,0603WAF3323T5E,UNI-ROYAL(Uniroyal Elec),,0603,100mW Thick Film Resistor 75V ±100ppm/℃ ±1% 332kΩ 0603 Chip Resistor - Surface Mount ROHS,YES,100,0.0011,0.11,,,-
+C86534,XC6220B331MR-G,Torex Semicon,,SOT-25,"50dB@(1kHz) 1A Fixed 3.3V Positive 6V SOT-25 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,10,0.3197,3.20,,,-
+C2765186,TYPE-C 16PIN 2MD(073),SHOU HAN,,SMD,"3A 1 Surface Mount, Right Angle 16P Female -25℃~+85℃ Type-C SMD USB Connectors ROHS",YES,20,0.0588,1.18,,,-
+C969151,CP2102N-A02-GQFN24R,SKYWORKS/SILICON LABS,,QFN-24-EP(4x4),USB to UART USB 2.0 QFN-24-EP(4x4) USB Converters ROHS,YES,2,2.1502,4.30,,,-
+C140782,GRM188R60J476ME15D,Murata Electronics,,0603,6.3V 47uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,50,0.0549,2.75,,,-
+C82544,1N5819HW-7-F,Diodes Incorporated,,SOD-123,40V 1 Independent 450mV@1A 1A SOD-123 Schottky Diodes ROHS,YES,60,0.0304,1.82,,,-
+C137780,RC0603FR-071K1L,YAGEO,,0603,100mW Thick Film Resistor 75V ±100ppm/℃ ±1% 1.1kΩ 0603 Chip Resistor - Surface Mount ROHS,YES,100,0.0013,0.13,,,-
+C111027,0603WAF100LT5E,UNI-ROYAL(Uniroyal Elec),,0603,100mW Thick Film Resistor 75V ±800ppm/℃ ±1% 100mΩ 0603 Chip Resistor - Surface Mount ROHS,YES,100,0.0037,0.37,,,-
+C269679,RMC04024K7JN,TyoHM,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±5% 4.7kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0019,0.19,,,-
+C719176,TC33X-2-103E,BOURNS,,"SMD-3P,3.8x3.6mm","±25% ±250ppm/℃ 150mW 10kΩ SMD-3P,3.8x3.6mm Potentiometers, Variable Resistors ROHS",YES,20,0.1182,2.36,,,-
+C18164398,DW01A,HL,,SOT23-6,1.5V~10V Lithium-ion/Polymer 1 SOT23-6 Battery Management ROHS,YES,20,0.0196,0.39,,,-
+C2830320,FS8205A,TECH PUBLIC,,SOT-23-6,20V 9A 31.5mΩ@2.5V 1.5W 1.2V@250uA SOT-23-6 MOSFETs ROHS,YES,20,0.0451,0.90,,,-

@@ -1,0 +1,13 @@
+LCSC Part Number,Manufacture Part Number,Manufacturer,Customer NO.,Package,Description,RoHS,Quantity,Unit Price($),Ext.Price($),Estimated lead time (business days),Date Code / Lot No.,Status
+C3288646,ICM-42670-P,TDK InvenSense,,LGA-14(2.5x3),Accelerometer Gyroscope LGA-14(2.5x3) Accelerometers ROHS,YES,5,1.2184,6.09,,,-
+C85831,BLM18KG121TN1D,Murata Electronics,,0603,30mΩ ±25% 120Ω@100MHz 0603 Ferrite Beads ROHS,YES,100,0.0109,1.09,,,-
+C22462841,LCKFB-DAPLINK-SkyStar-EXT,LCSC-boards,,-,Development Boards & Kits ROHS,YES,1,7.816,7.82,,,-
+C32710423,LCKFB-LSPI-SkyStar-STM32F407VGT6-PRO,LCSC-boards,,-,Development Boards & Kits ROHS,YES,4,7.6674,30.67,,,-
+C22357564,LCKFB-LSPI-Connection Line,LCSC-boards,,-,Development Boards & Kits ROHS,YES,3,1.0405,3.12,,,-
+C60490,RC0402FR-0710KL,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,300,0.0006,0.18,,,-
+C106235,RC0402FR-071KL,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±100ppm/℃ ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS,YES,300,0.0006,0.18,,,-
+C106231,RC0402FR-070RL,YAGEO,,0402,62.5mW Thick Film Resistor 50V ±1% 0Ω 0402 Chip Resistor - Surface Mount ROHS,YES,100,0.0007,0.07,,,-
+C7207,TAJB476K006RNJ,Kyocera AVX,,CASE-B-3528-21(mm),47uF 6.3V 2Ω@100kHz ±10% CASE-B-3528-21(mm) Tantalum Capacitors ROHS,YES,20,0.1436,2.87,,,-
+C42429163,ZNR4020ST1R5M,ZE,,"SMD,4x4mm","3A 1.5uH Magnetic Shielded Inductor ±20% 4.9A SMD,4x4mm Power Inductors ROHS",YES,20,0.0415,0.83,,,-
+C6955083,GRM155R71A104KA01J,Murata Electronics,,0402,10V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0051,0.51,,,-
+C52923,CL05A105KA5NQNC,Samsung Electro-Mechanics,,0402,25V 1uF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,100,0.0031,0.31,,,-

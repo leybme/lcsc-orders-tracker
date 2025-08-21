@@ -1,0 +1,12 @@
+LCSC Part Number,Manufacture Part Number,Manufacturer,Customer NO.,Package,Description,RoHS,Quantity,Unit Price($),Ext.Price($),Estimated lead time (business days),Date Code / Lot No.,Status
+C22392238,IDC1.27-US2S-3A,XYECONN,,"SMD,P=1.27mm","1.27mm -40℃~+105℃ Surface Mount,Vertical 1A Gold Brass 2x3P 3 IDC Header 1.27mm 2 SMD,P=1.27mm IDC Connectors ROHS",YES,10,0.0783,0.78,,,-
+C22392240,IDC1.27-US2S-5A,XYECONN,,"SMD,P=1.27mm","1.27mm -40℃~+105℃ Surface Mount,Vertical 1A Gold Brass 2x5P 5 IDC Header 1.27mm 2 SMD,P=1.27mm IDC Connectors ROHS",YES,10,0.1713,1.71,,,-
+C19627017,LESD5D5.0CT1G-HXY,HXY MOSFET,,SOD-523,9A@8/20us 90W@8/20us 18.6V 7.8V Bidirectional 5V SOD-523 ESD and Surge Protection (TVS/ESD) ROHS,YES,100,0.0131,1.31,,,-
+C7519,USBLC6-2SC6,STMicroelectronics,,SOT-23-6L,5A 17V 6V Unidirectional 5.25V SOT-23-6L ESD and Surge Protection (TVS/ESD) ROHS,YES,5,0.1082,0.54,,,-
+C26537,NCP1117ST33T3G,onsemi,,SOT-223,"62dB@(120Hz) 1A Fixed 3.3V Positive 20V SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,20,0.2905,5.81,,,-
+C488349,IP5306-I2C,INJOINIC,,ESOP-8,4.75V~5.5V Lithium Battery 2.1A ESOP-8 Battery Management ROHS,YES,10,0.2693,2.69,,,-
+C5736265,ESP32-C6-MINI-1-N4,Espressif Systems,,SMD-53P,SMD-53P WiFi Modules ROHS,YES,2,4.6134,9.23,,,-
+C22458776,Open-ColorEasyDuino-Green,ColorEasyDuino,,-,Development Boards & Kits ROHS,YES,1,10.38,10.38,,,-
+C15651,RT9193-33GB,Richtek Tech,,SOT-23-5,"300mA -50dB@(10kHz) Fixed 3.3V Positive 5.5V SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,5,0.1123,0.56,,,-
+C50936,HT7833,Holtek Semicon,,SOT-89-3,"500mA Fixed 3.3V Positive 8V SOT-89-3 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,5,0.2825,1.41,,,-
+C725790,TP4056,"UMW(Youtai Semiconductor Co., Ltd.)",,ESOP-8,3.7V~6.5V Lithium-ion 1 1A ESOP-8 Battery Management ROHS,YES,10,0.0576,0.58,,,-

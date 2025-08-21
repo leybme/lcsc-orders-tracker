@@ -1,0 +1,17 @@
+LCSC Part Number,Manufacture Part Number,Manufacturer,Customer NO.,Package,Description,RoHS,Quantity,Unit Price($),Ext.Price($),Estimated lead time (business days),Date Code / Lot No.,Status
+C417427,FUET-7525-3.6V,FUET,,"SMD,7.5x7.5mm","80dB Passive (Externally Driven) Electromagnetic 2.7kHz SMD,7.5x7.5mm Buzzers ROHS",YES,10,0.193,1.93,,,-
+C530539,GSPK151035PN-8R0.5W-L35-1.25T,INGHAi,,-,Speakers ROHS,YES,5,0.3637,1.82,,,-
+C579096,ADG714BRUZ,Analog Devices,,TSSOP-24,"8 2.5Ω SPST-NO TSSOP-24 Analog Switches, Multiplexers ROHS",YES,5,2.0251,10.13,,,-
+C5155921,M117P,Mysentech,,DFN-6-EP(2x2),-70℃~+150℃ I2C ±0.1℃ DFN-6-EP(2x2) Temperature Sensors ROHS,YES,10,0.5413,5.41,,,-
+C279936,SDNT1608X103F3950FTF,Sunlord,,-,-,-,100,0.0216,2.16,,,-
+C70377,CR2032-BS-6-1,Q&J,,SMD,Battery Holder CR2032 SMD Button And Strip Battery Connector ROHS,YES,5,0.1604,0.80,,,-
+C2687116,USBLC6-2SC6,"UMW(Youtai Semiconductor Co., Ltd.)",,SOT-23-6,15V 6V SOT-23-6 ESD and Surge Protection (TVS/ESD) ROHS,YES,20,0.0324,0.65,,,-
+C969151,CP2102N-A02-GQFN24R,SKYWORKS/SILICON LABS,,QFN-24-EP(4x4),USB to UART USB 2.0 QFN-24-EP(4x4) USB Converters ROHS,YES,3,1.9875,5.96,,,-
+C223608,MBR120VLSFT1G,onsemi,,SOD-123FL,20V 300mV@1A 1A SOD-123FL Schottky Diodes ROHS,YES,20,0.2178,4.36,,,-
+C9865,TPS54331DR,Texas Instruments,,SOIC-8,Buck Adjustable 800mV~25V 3A 3.5V~28V SOIC-8 DC-DC Converters ROHS,YES,10,0.1762,1.76,,,-
+C3040644,XC6220B331MR,TECH PUBLIC,,SOT-23-5,"50dB@(10kHz) 900mA Fixed 3.3V Positive 5.5V SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",YES,20,0.1255,2.51,,,-
+C7419906,ZX-QC-LT392932526,Megastar,,SMD,"Without Bracket 50mA 6.1mm 50,000 Cycles 12V 1.6N 3.7mm 2.5mm Rectangular Button Surface Mount,Vertical SPST SMD Tactile Switches ROHS",YES,30,0.0293,0.88,,,-
+C693825,K6-6272S01,Korean Hroparts Elec,,SMD,"White 13mm 50mA Surface Mount,Vertical 100,000 Cycles 1.6N 12V SMD Tactile Switches ROHS",YES,5,1.225,6.13,,,-
+C96446,CL10A106MA8NRNC,Samsung Electro-Mechanics,,0603,25V 10uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,200,0.0168,3.36,,,-
+C5673,CL10A105KA8NNNC,Samsung Electro-Mechanics,,0603,25V 1uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,YES,300,0.0044,1.32,,,-
+C2906982,FRC0603F1002TS,FOJAN,,0603,100mW Thick Film Resistor 75V ±100ppm/℃ ±1% 10kΩ 0603 Chip Resistor - Surface Mount ROHS,YES,1000,0.0007,0.70,,,-

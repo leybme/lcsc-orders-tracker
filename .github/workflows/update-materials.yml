@@ -1,0 +1,29 @@
+name: Auto Update Materials List
+
+on:
+  push:
+    paths:
+      - 'orders/*.csv'
+  workflow_dispatch:
+
+jobs:
+  update-materials:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install pandas
+      - name: Run update.py
+        run: python update.py
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add combined.csv README.md
+          git commit -m 'Auto update materials list' || echo 'No changes to commit'
+          git push

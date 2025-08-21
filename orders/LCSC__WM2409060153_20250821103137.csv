@@ -1,0 +1,11 @@
+LCSC Part Number,Manufacture Part Number,Manufacturer,Customer NO.,Package,Description,RoHS,Quantity,Unit Price($),Ext.Price($),Estimated lead time (business days),Date Code / Lot No.,Status
+C236266,CAT4104V-GT3,onsemi,,SOIC-8,25V PWM 4 175mA 3V~5.5V SOIC-8 LED Drivers ROHS,YES,10,0.9046,9.05,,,-
+C40097,AD5160BRJZ10-RL7,Analog Devices,,SOT-23-8,±15% SPI 2.7V~5.5V 10kΩ SOT-23-8 Digital Potentiometers ROHS,YES,10,0.7283,7.28,,,-
+C99652,CH340E,WCH(Jiangsu Qin Heng),,MSOP-10,2Mbps Transceiver USB 2.0 MSOP-10 USB Converters ROHS,YES,10,0.5224,5.22,,,-
+C695836,DS18B20U,"UMW(Youtai Semiconductor Co., Ltd.)",,MSOP-8,-55℃~+125℃ ±0.4℃ 1-Wire MSOP-8 Temperature Sensors ROHS,YES,10,0.5387,5.39,,,-
+C5336471,M601B,Mysentech,,DFN-8(2x2),-70℃~+150℃ 1-Wire ±0.5℃ DFN-8(2x2) Temperature Sensors ROHS,YES,10,0.2655,2.66,,,-
+C22367236,AO3481-HXY,HXY MOSFET,,SOT-23-3L,30V 4.2A 1.2W 130mΩ@2.5V 1.3V@250uA 1 P-Channel SOT-23-3L MOSFETs ROHS,YES,20,0.0255,0.51,,,-
+C4748804,AO3400-HXY,HXY MOSFET,,SOT-23,"30V 5.8A 30mΩ@10V,5.8A 1.4W 700mV 1 N-Channel SOT-23 MOSFETs ROHS",YES,20,0.019,0.38,,,-
+C19630788,AO3415A-HXY,HXY MOSFET,,SOT-23,"20V 4.1A 45mΩ@4.5V,4A 1.4W 900mV@250uA SOT-23 MOSFETs ROHS",YES,10,0.0462,0.46,,,-
+C780859,MMBT3906LP-7B,Diodes Incorporated,,DFN-3(1x0.6),"40V 100@10mA,1.0V 1W 200mA PNP DFN-3(1x0.6) Bipolar (BJT) ROHS",YES,10,0.0697,0.70,,,-
+C460099,MMBT3904LP-7,Diodes Incorporated,,DFN-3(1x0.6),"40V 100@10mA,1.0V 1W 200mA NPN DFN-3(1x0.6) Bipolar (BJT) ROHS",YES,10,0.0324,0.32,,,-
