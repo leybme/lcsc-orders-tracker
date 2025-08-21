@@ -34,9 +34,9 @@ cols_to_remove = [
 ]
 combined_df = combined_df.drop(columns=[col for col in cols_to_remove if col in combined_df.columns])
 
-# Rename 'Manufacture Part Number' to 'MPN' if it exists
+# Keep 'Manufacture Part Number' as a separate column, and also create 'MPN' for merging and display
 if 'Manufacture Part Number' in combined_df.columns:
-    combined_df = combined_df.rename(columns={'Manufacture Part Number': 'MPN'})
+    combined_df['MPN'] = combined_df['Manufacture Part Number']
 
 
 
@@ -97,8 +97,8 @@ if part_col in combined_df.columns:
     combined_df = merged_df
 
 
-# Reorder columns: LCSC Part Number, MPN, Description, Package, Manufacturer, then the rest
-first_cols = ['LCSC Part Number', 'MPN', 'Description', 'Package', 'Manufacturer']
+# Reorder columns: LCSC Part Number, Manufacture Part Number, MPN, Description, Package, Manufacturer, then the rest
+first_cols = ['LCSC Part Number', 'Manufacture Part Number', 'MPN', 'Description', 'Package', 'Manufacturer']
 cols = [col for col in first_cols if col in combined_df.columns] + [col for col in combined_df.columns if col not in first_cols]
 combined_df = combined_df[cols]
 
@@ -114,14 +114,20 @@ part_col = 'LCSC Part Number'
 header = '| ' + ' | '.join(combined_df.columns) + ' |\n'
 separator = '| ' + ' | '.join(['---'] * len(combined_df.columns)) + ' |\n'
 
-# Generate Markdown table rows with links for LCSC Part Number
+
+# Generate Markdown table rows with links for LCSC Part Number and Manufacturer (datasheet)
 rows = ''
 for _, row in combined_df.iterrows():
     row_cells = []
+    datasheet_url = ''
+    if part_col in row and pd.notna(row[part_col]) and str(row[part_col]).strip():
+        datasheet_url = f'https://www.lcsc.com/datasheet/{row[part_col]}.pdf'
     for col in combined_df.columns:
         cell = str(row[col])
         if col == part_col and pd.notna(cell) and cell.strip():
             cell = f'[{cell}](https://www.lcsc.com/product-detail/{cell}.html)'
+        elif col == 'Manufacture Part Number' and datasheet_url:
+            cell = f'[{cell}]({datasheet_url})'
         row_cells.append(cell)
     rows += '| ' + ' | '.join(row_cells) + ' |\n'
 
