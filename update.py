@@ -46,7 +46,7 @@ if 'Description' in cols:
     combined_df = combined_df[cols]
 
 # Save to a new CSV file
-combined_df.to_csv(os.path.join(csv_dir, 'combined.csv'), index=False)
+combined_df.to_csv(os.path.join(os.path.dirname(__file__), 'combined.csv'), index=False)
 
 # Column name for LCSC Part Number
 part_col = 'LCSC Part Number'
