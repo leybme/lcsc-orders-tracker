@@ -34,6 +34,10 @@ cols_to_remove = [
 ]
 combined_df = combined_df.drop(columns=[col for col in cols_to_remove if col in combined_df.columns])
 
+# Rename 'Manufacture Part Number' to 'MPN' if it exists
+if 'Manufacture Part Number' in combined_df.columns:
+    combined_df = combined_df.rename(columns={'Manufacture Part Number': 'MPN'})
+
 # Move 'Description' column to the third position if it exists
 cols = list(combined_df.columns)
 if 'Description' in cols:
