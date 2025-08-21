@@ -1,4 +1,7 @@
+
 # LCSC Orders Tracker
+
+> I wrote this repository to solve the pain of ordering a lot of electronic components and then not knowing if I had ordered them before. I also use this to share with other laboratory members for quick searching and to help them use these parts in their designs.
 
 This project automatically combines all CSV order files in the `orders` folder, removes unnecessary columns, and generates a Markdown table with LCSC links in the `README.md`.
 
