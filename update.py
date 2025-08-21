@@ -25,6 +25,7 @@ for i, file in enumerate(csv_files):
 # Concatenate all DataFrames
 combined_df = pd.concat(dfs, ignore_index=True)
 
+
 # Columns to remove
 cols_to_remove = [
     'Customer NO.',
@@ -32,6 +33,13 @@ cols_to_remove = [
     'Estimated lead time (business days)'
 ]
 combined_df = combined_df.drop(columns=[col for col in cols_to_remove if col in combined_df.columns])
+
+# Move 'Description' column to the third position if it exists
+cols = list(combined_df.columns)
+if 'Description' in cols:
+    cols.remove('Description')
+    cols.insert(2, 'Description')
+    combined_df = combined_df[cols]
 
 # Save to a new CSV file
 combined_df.to_csv(os.path.join(csv_dir, 'combined.csv'), index=False)
