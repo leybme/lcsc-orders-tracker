@@ -1,6 +1,8 @@
 import pandas as pd
 import glob
 import os
+import re
+from datetime import datetime
 
 
 # Set the directory containing your CSV files (relative path for portability)
@@ -20,6 +22,18 @@ for i, file in enumerate(csv_files):
     else:
         # Skip header for subsequent files
         df = pd.read_csv(file, header=0)
+    
+    # Extract date from filename: LCSC__WM2310150097_20250821103144.csv -> 20250821
+    filename = os.path.basename(file)
+    match = re.search(r'_(\d{8})\d+\.csv$', filename)
+    if match:
+        date_str = match.group(1)
+        # Convert YYYYMMDD to YYYY-MM-DD
+        order_date = datetime.strptime(date_str, '%Y%m%d').strftime('%Y-%m-%d')
+        df['Last Update'] = order_date
+    else:
+        df['Last Update'] = 'Unknown'
+    
     dfs.append(df)
 
 # Concatenate all DataFrames
@@ -77,6 +91,8 @@ if part_col in combined_df.columns:
         agg_dict[desc_col] = 'first'
     if mpn_col in combined_df.columns:
         agg_dict[mpn_col] = 'first'
+    if 'Last Update' in combined_df.columns:
+        agg_dict['Last Update'] = 'max'  # Keep the most recent date
 
     merged_df = combined_df.groupby(part_col, as_index=False).agg(agg_dict)
 
@@ -96,6 +112,15 @@ if part_col in combined_df.columns:
 
     combined_df = merged_df
 
+
+# Sort by Package and MPN
+sort_cols = []
+if 'Package' in combined_df.columns:
+    sort_cols.append('Package')
+if 'MPN' in combined_df.columns:
+    sort_cols.append('MPN')
+if sort_cols:
+    combined_df = combined_df.sort_values(by=sort_cols, na_position='last')
 
 # Reorder columns: LCSC Part Number, Manufacture Part Number, MPN, Description, Package, Manufacturer, then the rest
 first_cols = ['LCSC Part Number', 'Manufacture Part Number', 'MPN', 'Description', 'Package', 'Manufacturer']
@@ -131,8 +156,24 @@ for _, row in combined_df.iterrows():
         row_cells.append(cell)
     rows += '| ' + ' | '.join(row_cells) + ' |\n'
 
+# Calculate summary information
+total_items = len(combined_df)
+total_quantity = combined_df[qty_col].sum() if qty_col in combined_df.columns else 0
+total_value = combined_df[ext_price_col].sum() if ext_price_col in combined_df.columns else 0
+
+# Create summary section
+summary = f'''## Summary
+
+- **Total Items**: {total_items}
+- **Total Quantity**: {int(total_quantity)}MPN
+- **Total Value**: ${total_value:.2f}
+
+---
+
+'''
+
 # Combine all parts
-markdown = '# Materials List\n\n' + header + separator + rows
+markdown = '# Materials List\n\n' + summary + header + separator + rows
 
 
 # Write to README.md in the root directory
