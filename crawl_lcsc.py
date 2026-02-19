@@ -176,7 +176,7 @@ def build_html(records: List[Dict[str, Any]], html_path: Path) -> None:
 <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>LCSC Crawl Results</title>
+    <title>LCSC Items list</title>
     <style>
         body {{ font-family: Arial, sans-serif; margin: 24px; background: #f8f9fb; }}
         h1 {{ margin-bottom: 12px; }}
@@ -187,7 +187,7 @@ def build_html(records: List[Dict[str, Any]], html_path: Path) -> None:
     </style>
 </head>
 <body>
-    <h1>LCSC Crawl Results</h1>
+    <h1>LCSC Items list</h1>
     <table>
         <thead>
             <tr>
@@ -257,8 +257,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Crawl LCSC product pages from combined.csv")
     parser.add_argument("--combined", type=Path, default=DEFAULT_COMBINED, help="Path to combined.csv")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Where to write crawled data CSV")
-    parser.add_argument("--limit", type=int, default=3, help="Number of parts to crawl (default: 3 for safe debug)")
-    parser.add_argument("--sleep", type=float, default=1.0, help="Seconds to sleep between requests")
+    parser.add_argument("--limit", type=int, default=264, help="Number of parts to crawl (default: 3 for safe debug)")
+    parser.add_argument("--sleep", type=float, default=5, help="Seconds to sleep between requests")
     parser.add_argument("--download-images", action="store_true", help="Download product images to the images folder")
     parser.add_argument("--image-dir", type=Path, default=DEFAULT_IMAGE_DIR, help="Directory to save images when enabled")
     parser.add_argument("--html-output", type=Path, default=DEFAULT_HTML, help="Write HTML summary to this file")
