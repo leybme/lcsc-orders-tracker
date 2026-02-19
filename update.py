@@ -5,14 +5,26 @@ import re
 from datetime import datetime
 
 
-# Set the directory containing your CSV files (relative path for portability)
-csv_dir = os.path.join(os.path.dirname(__file__), 'orders')
+# Set root and the directory containing your CSV files (relative path for portability)
+root_dir = os.path.dirname(__file__)
+csv_dir = os.path.join(root_dir, 'orders')
+
+
+
+def _parse_order_date(order_number: str) -> str:
+    """Derive order date from order number (WMYYMMDDxxxx -> 20YY-MM-DD)."""
+    m = re.match(r'^WM(\d{2})(\d{2})(\d{2})', order_number)
+    if m:
+        yy, mm, dd = m.groups()
+        return f"20{yy}-{mm}-{dd}"
+    return 'Unknown'
 
 # Find all CSV files in the directory
 csv_files = glob.glob(os.path.join(csv_dir, '*.csv'))
 
-# List to hold DataFrames
+# List to hold DataFrames and order metadata
 dfs = []
+orders_info = []
 
 # Loop through files and read them
 for i, file in enumerate(csv_files):
@@ -25,14 +37,34 @@ for i, file in enumerate(csv_files):
     
     # Extract date from filename: LCSC__WM2310150097_20250821103144.csv -> 20250821
     filename = os.path.basename(file)
-    match = re.search(r'_(\d{8})\d+\.csv$', filename)
+    match = re.match(r'^LCSC__([A-Z0-9]+)_(\d{8})\d+\.csv$', filename)
     if match:
-        date_str = match.group(1)
-        # Convert YYYYMMDD to YYYY-MM-DD
-        order_date = datetime.strptime(date_str, '%Y%m%d').strftime('%Y-%m-%d')
+        order_number = match.group(1)
+        # Prefer parsing date from order number (first date), fallback to filename timestamp
+        order_date = _parse_order_date(order_number)
+        if order_date == 'Unknown':
+            date_str = match.group(2)
+            order_date = datetime.strptime(date_str, '%Y%m%d').strftime('%Y-%m-%d')
         df['Last Update'] = order_date
+        # Compute total value for this order
+        if 'Ext.Price($)' in df.columns and pd.api.types.is_numeric_dtype(df['Ext.Price($)']):
+            order_total = float(df['Ext.Price($)'].sum())
+        else:
+            order_total = float((df['Quantity'] * df['Unit Price($)']).sum())
+        orders_info.append({
+            'Order #': order_number,
+            'Last Update': order_date,
+            'Source File': filename,
+            'Total Value($)': round(order_total, 2),
+        })
     else:
         df['Last Update'] = 'Unknown'
+        orders_info.append({
+            'Order #': 'Unknown',
+            'Last Update': 'Unknown',
+            'Source File': filename,
+            'Total Value($)': 0.0,
+        })
     
     dfs.append(df)
 
@@ -128,7 +160,41 @@ cols = [col for col in first_cols if col in combined_df.columns] + [col for col 
 combined_df = combined_df[cols]
 
 # Save to a new CSV file
-combined_df.to_csv(os.path.join(os.path.dirname(__file__), 'combined.csv'), index=False)
+combined_df.to_csv(os.path.join(root_dir, 'combined.csv'), index=False)
+
+# Build order list (deduped by order number, newest first) and save to CSV
+orders_df = pd.DataFrame(orders_info)
+orders_table_md = ''
+if not orders_df.empty:
+    if 'Last Update' in orders_df.columns:
+        # Coerce to datetime where possible for sorting
+        orders_df['Last Update'] = pd.to_datetime(orders_df['Last Update'], errors='coerce')
+    orders_df = orders_df.sort_values(['Last Update', 'Order #'], ascending=[False, True])
+    # Keep the newest record per order number
+    if 'Order #' in orders_df.columns:
+        orders_df = orders_df.drop_duplicates(subset=['Order #'], keep='first')
+    # Format date back to string for output
+    if 'Last Update' in orders_df.columns:
+        orders_df['Last Update'] = orders_df['Last Update'].dt.strftime('%Y-%m-%d')
+
+    orders_df.to_csv(os.path.join(root_dir, 'orderlist.csv'), index=False)
+
+    # Markdown table for orders
+    orders_header = '| ' + ' | '.join(orders_df.columns) + ' |\n'
+    orders_separator = '| ' + ' | '.join(['---'] * len(orders_df.columns)) + ' |\n'
+    order_rows = ''
+    for _, row in orders_df.iterrows():
+        cells = []
+        for col in orders_df.columns:
+            val = row[col]
+            if col == 'Total Value($)':
+                cells.append(f"${val:.2f}")
+            else:
+                cells.append(str(val))
+        order_rows += '| ' + ' | '.join(cells) + ' |\n'
+    orders_table_md = '## Orders\n\n' + orders_header + orders_separator + order_rows + '\n'
+else:
+    orders_table_md = '## Orders\n\n_No orders found._\n\n'
 
 # Column name for LCSC Part Number
 part_col = 'LCSC Part Number'
@@ -173,11 +239,10 @@ summary = f'''## Summary
 '''
 
 # Combine all parts
-markdown = '# Materials List\n\n' + summary + header + separator + rows
+markdown = '# Materials List\n\n' + orders_table_md + summary + header + separator + rows
 
 
 # Write to README.md in the root directory
-root_dir = os.path.dirname(__file__)
 with open(os.path.join(root_dir, 'README.md'), 'w', encoding='utf-8') as f:
     f.write(markdown)
 
